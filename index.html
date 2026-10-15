@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#eff8ff">
+    <meta name="description" content="A calm little corner of the internet. Create your Cloudlet account.">
+    <title>Cloudlet — a little room to grow</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="/" aria-label="Cloudlet home">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+          cloudlet
+        </a>
+        <p class="top-note">A little room to grow <span aria-hidden="true">✳</span></p>
+      </header>
+
+      <section class="welcome-layout" aria-label="Create your Cloudlet account">
+        <div class="welcome-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR SPACE, YOUR PACE</div>
+          <h1>Good things<br>grow <em>gently.</em></h1>
+          <p class="intro">A soft place to gather your thoughts, make a little progress, and be exactly where you are.</p>
+
+          <div class="artwork" aria-hidden="true">
+            <div class="sun-glow"></div>
+            <div class="cloud cloud-one"><i></i><i></i><i></i></div>
+            <div class="cloud cloud-two"><i></i><i></i><i></i></div>
+            <div class="plant">
+              <span class="leaf leaf-left"></span>
+              <span class="leaf leaf-right"></span>
+              <span class="leaf leaf-top"></span>
+              <span class="stem"></span>
+              <span class="pot"></span>
+            </div>
+            <div class="art-caption"><span class="caption-spark">✳</span> take it one day at a time</div>
+            <span class="floating-star star-one">✦</span>
+            <span class="floating-star star-two">✧</span>
+          </div>
+
+          <div class="tiny-note"><span class="tiny-note-icon">♡</span> A calmer corner of the internet.</div>
+        </div>
+
+        <section class="auth-card" aria-labelledby="auth-title">
+          <div class="card-top">
+            <div class="avatar-stack" aria-hidden="true"><span>☁</span><span>✿</span><span>✧</span></div>
+            <span class="members-note">nice to have you here</span>
+          </div>
+
+          <div class="form-heading">
+            <p class="form-kicker" id="form-kicker">YOUR NEXT CHAPTER STARTS HERE</p>
+            <h2 id="auth-title">Create your account</h2>
+            <p id="form-subtitle">A fresh start is just a few details away.</p>
+          </div>
+
+          <div class="auth-tabs" role="tablist" aria-label="Account access">
+            <button class="tab-button is-active" id="signup-tab" type="button" role="tab" aria-selected="true" aria-controls="auth-form" data-mode="signup">Sign up</button>
+            <button class="tab-button" id="login-tab" type="button" role="tab" aria-selected="false" aria-controls="auth-form" data-mode="login">Log in</button>
+          </div>
+
+          <form id="auth-form" novalidate>
+            <label class="field" id="name-field">
+              <span>Your name</span>
+              <span class="input-wrap"><span class="input-icon" aria-hidden="true">✿</span><input id="name" name="name" type="text" autocomplete="name" placeholder="What should we call you?" minlength="2" maxlength="60"></span>
+            </label>
+            <label class="field">
+              <span>Email address</span>
+              <span class="input-wrap"><span class="input-icon mail-icon" aria-hidden="true">✉</span><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" maxlength="320" required></span>
+            </label>
+            <label class="field">
+              <span>Password <small id="password-hint">at least 10 characters</small></span>
+              <span class="input-wrap"><span class="input-icon lock-icon" aria-hidden="true">◈</span><input id="password" name="password" type="password" autocomplete="new-password" placeholder="Make it a good one" minlength="10" maxlength="128" required><button class="password-toggle" type="button" aria-label="Show password" aria-pressed="false">Show</button></span>
+            </label>
+
+            <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+            <button class="submit-button" id="submit-button" type="submit"><span id="submit-label">Create my account</span><span class="button-arrow" aria-hidden="true">↗</span></button>
+            <p class="terms-note" id="terms-note">By joining, you agree to keep this a kind little corner.</p>
+          </form>
+
+          <div class="signed-in" id="signed-in" hidden>
+            <div class="success-mark" aria-hidden="true">✓</div>
+            <h3 id="success-title">You’re all set!</h3>
+            <p id="success-message">Your account is ready.</p>
+            <button class="signout-button" id="signout-button" type="button">Sign out</button>
+          </div>
+
+          <div class="card-footer"><span>☁</span> Made for softer days <span class="footer-divider">·</span> <span class="footer-heart">♥</span> with care</div>
+        </section>
+      </section>
+
+      <footer class="page-footer"><span>© CLOUDLET</span><span>SMALL STEPS COUNT, TOO.</span></footer>
+    </main>
+  </body>
+</html>
